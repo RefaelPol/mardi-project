@@ -1,0 +1,89 @@
+.contact-page-wrapper {
+    background-color: $baseColor;
+    padding-bottom: 30px;
+}
+
+.contact {
+    font-family: $hfont;
+    color: $Color1;
+    font-size: 2rem;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+    word-spacing: 20px;
+}
+
+.form-container {
+    font-family: $bfont;
+    font-size: large;
+    margin: auto;
+    max-width: 50vw;
+    border-radius: 5px;
+    background-color: $backColor;
+    padding: 20px;
+
+
+
+
+    input[type=submit] {
+        background-color: $baseColor;
+        color: $Color2;
+        padding: 12px 40px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    input[type=submit]:hover {
+        background-color: $Color1;
+    }
+
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 100%;
+        /* Full width */
+        padding: 12px;
+        /* Some padding */
+        border: 1px solid $Color3;
+        /* Gray border */
+        border-radius: 4px;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* Make sure that padding and width stays in place */
+        margin-top: 6px;
+        /* Add a top margin */
+        margin-bottom: 16px;
+        /* Bottom margin */
+        resize: vertical
+            /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+
+}
+
+@media all and (max-width: 550px) {
+    .form-container {
+        max-width: 70vw;
+    }
+}
+
+.map-zone {
+    h2 {
+        text-align: center;
+        color: $Color1;
+        font-size: 1.95rem;
+    }
+
+    iframe {
+        max-width: 80vw;
+        display: block;
+        margin: auto;
+    }
+}

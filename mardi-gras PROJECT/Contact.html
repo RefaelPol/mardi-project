@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardi-gras | Contact page</title>
+    <link rel="icon" href="MEDIA/mardiLogo.png">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="SASS/main.css">
+</head>
+
+<body>
+    <!-- heder Start -->
+    <nav class="navbar">
+        <div class="icon-width">
+            <a href="index.html"><img class="logo-icon" src="MEDIA/mardiLogo.png" alt=""></a>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item"><a href="index.html">Home</a></li>
+            <li class="list-item"><a href="About.html">About</a></li>
+            <li class="list-item"><a href="media.html">Media</a></li>
+            <li class="list-item"><a href="FAQ.html">FAQ</a></li>
+            <li class="list-item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    <!-- heder End -->
+
+    <div class="contact-page-wrapper">
+        <section class="contact">
+            <h1>Contact Us</h1>
+        </section>
+
+
+
+        <!-- form Start -->
+        <div class="form-container">
+            <form name="myForm" onsubmit="return(validation())">
+                <label for="">Name</label>
+                <input type="text" id="fname" placeholder="Name...">
+                <span class="fnameError"></span>
+                <br>
+
+                <label for="">Last Name</label>
+                <input type="text" id="lname" placeholder="Last name...">
+                <span class="lnameError"></span>
+                <br>
+
+                <label for="">Email</label>
+                <input type="text" id="email" placeholder="Email...">
+                <span class="emailError"></span>
+                <br>
+
+                <label for="">Questions</label>
+                <textarea name="textarea" placeholder="any question?" cols="30" rows="5"></textarea>
+                <div class="btn">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        <br><br><br>
+        <!-- form End -->
+
+        <div class="map-zone">
+            <h2>Fined us on maps:</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d442130.55147558707!2d-89.60237363860412!3d30.03269959693466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2z16DXmdeVINeQ15XXqNec15nXoNehLCDXnNeV15DXmdeW15nXkNeg15QsINeQ16jXpteV16og15TXkdeo15nXqg!5e0!3m2!1siw!2sil!4v1655409573041!5m2!1siw!2sil"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+
+    </div>
+    <!-- footer Start -->
+    <div class="footer">
+        &#169; Mardi Grass 2022 - project by Refael.
+    </div>
+    <!-- footer End -->
+
+
+    <script src="JS/form-validation.js"></script>
+    <script src="JS/navigation.js"></script>
+</body>
+
+</html>

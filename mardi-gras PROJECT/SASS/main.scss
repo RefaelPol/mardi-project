@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap');
+@import "setup";
+@import "header";
+@import "mainContent";
+@import "footer";
+@import "about";
+@import "media";
+@import "FAQ";
+@import "contact";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: $hfont;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $bfont;
+}
+
+p {
+    font-family: $tfont;
+}
